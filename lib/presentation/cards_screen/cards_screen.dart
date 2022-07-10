@@ -22,7 +22,7 @@ class CardsScreen extends GetWidget<CardsController> {
                               Align(
                                   alignment: Alignment.centerLeft,
                                   child: Container(
-                                      height: getVerticalSize(505.00),
+                                      height: getVerticalSize(405.00),
                                       width: size.width,
                                       child: Stack(
                                           alignment: Alignment.topCenter,
@@ -54,15 +54,19 @@ class CardsScreen extends GetWidget<CardsController> {
                                                               child: Container(
                                                                   height:
                                                                       getVerticalSize(
-                                                                          23.00),
+                                                                          50.00),
                                                                   width:
                                                                       getHorizontalSize(
                                                                           13.00),
-                                                                  child: SvgPicture.asset(
-                                                                      ImageConstant
-                                                                          .imgVector,
-                                                                      fit: BoxFit
-                                                                          .fill))),
+                                                                  child: Padding(
+                                                                      padding: EdgeInsets.only(
+                                                                          left:
+                                                                              5.0),
+                                                                      child: SvgPicture.asset(
+                                                                          ImageConstant
+                                                                              .imgVector,
+                                                                          fit: BoxFit
+                                                                              .scaleDown)))),
                                                           Padding(
                                                               padding: EdgeInsets.only(
                                                                   left: getHorizontalSize(
@@ -86,66 +90,6 @@ class CardsScreen extends GetWidget<CardsController> {
                                                                               18),
                                                                           letterSpacing:
                                                                               1.08)))
-                                                        ]))),
-                                            Align(
-                                                alignment: Alignment.topCenter,
-                                                child: Padding(
-                                                    padding: EdgeInsets.only(
-                                                        top: getVerticalSize(
-                                                            5.00),
-                                                        right:
-                                                            getHorizontalSize(
-                                                                5.00),
-                                                        bottom: getVerticalSize(
-                                                            10.00)),
-                                                    child: Row(
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .center,
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        children: [
-                                                          Padding(
-                                                              padding: EdgeInsets.only(
-                                                                  left:
-                                                                      getHorizontalSize(
-                                                                          27.79),
-                                                                  top: getVerticalSize(
-                                                                      17.00),
-                                                                  bottom:
-                                                                      getVerticalSize(
-                                                                          15.91)),
-                                                              child: Container(
-                                                                  height:
-                                                                      getVerticalSize(
-                                                                          11.09),
-                                                                  width:
-                                                                      getHorizontalSize(
-                                                                          28.43),
-                                                                  child: SvgPicture.asset(
-                                                                      ImageConstant
-                                                                          .img941,
-                                                                      fit: BoxFit
-                                                                          .fill))),
-                                                          Padding(
-                                                              padding: EdgeInsets.only(
-                                                                  left: getHorizontalSize(
-                                                                      232.18),
-                                                                  right:
-                                                                      getHorizontalSize(
-                                                                          15.00)),
-                                                              child: Container(
-                                                                  height:
-                                                                      getVerticalSize(
-                                                                          44.00),
-                                                                  width:
-                                                                      getHorizontalSize(
-                                                                          66.60),
-                                                                  child: SvgPicture.asset(
-                                                                      ImageConstant
-                                                                          .imgStats,
-                                                                      fit: BoxFit
-                                                                          .fill)))
                                                         ]))),
                                             Align(
                                                 alignment:
@@ -214,7 +158,7 @@ class CardsScreen extends GetWidget<CardsController> {
                                       bottom: getVerticalSize(20.00)),
                                   child: GestureDetector(
                                       onTap: () {
-                                        onTapBtnScanqrcode();
+                                        onTapView();
                                       },
                                       child: Container(
                                           alignment: Alignment.center,
@@ -236,7 +180,21 @@ class CardsScreen extends GetWidget<CardsController> {
     Get.back();
   }
 
+  onTapView() async {
+    await PermissionManager.askForPermission(Permission.camera);
+    await PermissionManager.askForPermission(Permission.storage);
+    List<String?>? imageList = [];
+//TODO: Permission - use imageList for using selected images
+    await FileManager().showModelSheetForImage(getImages: (value) async {
+      imageList = value;
+    });
+  }
+
   onTapBtnScanqrcode() {
+    Get.toNamed(AppRoutes.qrCodeScanPageScreen);
+  }
+
+  onTapTxtScanyourpayba() {
     Get.toNamed(AppRoutes.qrCodeScanPageScreen);
   }
 }

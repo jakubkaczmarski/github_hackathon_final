@@ -247,20 +247,20 @@ class MapsScreen extends GetWidget<MapsController> {
                                                                     Padding(
                                                                         padding: EdgeInsets.only(
                                                                             left: getHorizontalSize(
-                                                                                10.00),
+                                                                                0.00),
                                                                             top: getVerticalSize(
                                                                                 47.00),
                                                                             right: getHorizontalSize(
-                                                                                10.00),
+                                                                                0.00),
                                                                             bottom: getVerticalSize(
                                                                                 9.00)),
                                                                         child: Image.asset(
                                                                             ImageConstant
                                                                                 .img6f40a09aa0024,
                                                                             height:
-                                                                                getVerticalSize(149.00),
-                                                                            width: getHorizontalSize(277.00),
-                                                                            fit: BoxFit.fill))
+                                                                                getVerticalSize(130.00),
+                                                                            width: getHorizontalSize(0.00),
+                                                                            fit: BoxFit.cover))
                                                                   ]))))
                                                 ])),
                                         Padding(

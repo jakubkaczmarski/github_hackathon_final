@@ -25,7 +25,7 @@ class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
                                   child: Container(
                                       width: size.width,
                                       margin: EdgeInsets.only(
-                                          top: getVerticalSize(4.00)),
+                                          top: getVerticalSize(0.00)),
                                       decoration: BoxDecoration(
                                           color: ColorConstant.lightGreen500Cc),
                                       child: Padding(
@@ -66,8 +66,8 @@ class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
                                                     padding: EdgeInsets.only(
                                                         left: getHorizontalSize(
                                                             52.00),
-                                                        bottom: getVerticalSize(
-                                                            7.31)),
+                                                        bottom:
+                                                            getVerticalSize(0)),
                                                     child: Text(
                                                         "msg_review_of_my_we"
                                                             .tr,
@@ -96,7 +96,7 @@ class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
                               Align(
                                   alignment: Alignment.centerRight,
                                   child: Container(
-                                      height: getVerticalSize(319.00),
+                                      height: getVerticalSize(400.00),
                                       width: getHorizontalSize(358.00),
                                       margin: EdgeInsets.only(
                                           left: getHorizontalSize(10.00),
@@ -108,7 +108,7 @@ class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
                                                 alignment: Alignment.centerLeft,
                                                 child: Container(
                                                     height:
-                                                        getVerticalSize(319.00),
+                                                        getVerticalSize(400.00),
                                                     width: getHorizontalSize(
                                                         341.00),
                                                     margin: EdgeInsets.only(

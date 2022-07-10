@@ -26,7 +26,7 @@ class DashboardWithoutLoginScreen
                                       width: size.width,
                                       margin: EdgeInsets.only(
                                           left: getHorizontalSize(2.00),
-                                          top: getVerticalSize(4.00)),
+                                          top: getVerticalSize(0.00)),
                                       decoration: BoxDecoration(
                                           color: ColorConstant.lightGreen500Cc),
                                       child: Padding(

@@ -28,7 +28,7 @@ class MapScreen extends GetWidget<MapController> {
                                       height: getVerticalSize(333.00),
                                       width: size.width,
                                       margin: EdgeInsets.only(
-                                          top: getVerticalSize(4.00)),
+                                          top: getVerticalSize(0.00)),
                                       child: Stack(
                                           alignment: Alignment.centerLeft,
                                           children: [

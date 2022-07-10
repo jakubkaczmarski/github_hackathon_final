@@ -25,7 +25,7 @@ class SearchPageScreen extends GetWidget<SearchPageController> {
                                   child: Container(
                                       width: size.width,
                                       margin: EdgeInsets.only(
-                                          top: getVerticalSize(4.00)),
+                                          top: getVerticalSize(0.00)),
                                       decoration: BoxDecoration(
                                           color: ColorConstant.lightGreen500Cc),
                                       child: Padding(
