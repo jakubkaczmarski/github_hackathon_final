@@ -1,5 +1,5 @@
 import '/core/app_export.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/dashboard_without_login_screen/models/dashboard_without_login_model.dart';
+import 'package:plz_now_work/presentation/dashboard_without_login_screen/models/dashboard_without_login_model.dart';
 
 class DashboardWithoutLoginController extends GetxController {
   Rx<DashboardWithoutLoginModel> dashboardWithoutLoginModelObj =

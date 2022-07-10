@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jakub_kaczmarski_s_application4/core/app_export.dart';
+import 'package:plz_now_work/core/app_export.dart';
 
 class AppDecoration {
   static BoxDecoration get groupstylecornerradius => BoxDecoration(
@@ -15,28 +15,13 @@ class AppDecoration {
           ),
         ),
       );
-  static BoxDecoration get groupstylelightGreen1 => BoxDecoration(
+  static BoxDecoration get textstylepoppinssemibold15 => BoxDecoration(
         color: ColorConstant.lightGreen500,
         borderRadius: BorderRadius.circular(
           getHorizontalSize(
             6.00,
           ),
         ),
-        boxShadow: [
-          BoxShadow(
-            color: ColorConstant.bluegray90014,
-            spreadRadius: getHorizontalSize(
-              2.00,
-            ),
-            blurRadius: getHorizontalSize(
-              2.00,
-            ),
-            offset: Offset(
-              0,
-              24,
-            ),
-          ),
-        ],
       );
   static BoxDecoration get groupstylelightGreen500Cc => BoxDecoration(
         color: ColorConstant.lightGreen500Cc,
@@ -87,10 +72,15 @@ class AppDecoration {
         color: ColorConstant.gray200,
       );
   static BoxDecoration get textstylepoppinssemibold103 => BoxDecoration(
-        color: ColorConstant.lightGreen500,
         borderRadius: BorderRadius.circular(
           getHorizontalSize(
             6.00,
+          ),
+        ),
+        border: Border.all(
+          color: ColorConstant.redA100,
+          width: getHorizontalSize(
+            1.00,
           ),
         ),
       );
@@ -111,12 +101,12 @@ class AppDecoration {
         color: ColorConstant.whiteA700,
         borderRadius: BorderRadius.circular(
           getHorizontalSize(
-            8.00,
+            6.00,
           ),
         ),
         boxShadow: [
           BoxShadow(
-            color: ColorConstant.bluegray40033,
+            color: ColorConstant.black9003f,
             spreadRadius: getHorizontalSize(
               2.00,
             ),
@@ -125,7 +115,7 @@ class AppDecoration {
             ),
             offset: Offset(
               0,
-              8,
+              4,
             ),
           ),
         ],
@@ -164,17 +154,14 @@ class AppDecoration {
       );
   static BoxDecoration get groupstylewhite3 => BoxDecoration(
         color: ColorConstant.whiteA700,
-      );
-  static BoxDecoration get groupstylewhite2 => BoxDecoration(
-        color: ColorConstant.whiteA700,
         borderRadius: BorderRadius.circular(
           getHorizontalSize(
-            6.00,
+            8.00,
           ),
         ),
         boxShadow: [
           BoxShadow(
-            color: ColorConstant.black9003f,
+            color: ColorConstant.bluegray40033,
             spreadRadius: getHorizontalSize(
               2.00,
             ),
@@ -183,10 +170,13 @@ class AppDecoration {
             ),
             offset: Offset(
               0,
-              4,
+              8,
             ),
           ),
         ],
+      );
+  static BoxDecoration get groupstylewhite2 => BoxDecoration(
+        color: ColorConstant.whiteA700,
       );
   static BoxDecoration get textstylesfprodisplaymedium16 => BoxDecoration(
         color: ColorConstant.gray300,
@@ -220,6 +210,21 @@ class AppDecoration {
             6.00,
           ),
         ),
+        boxShadow: [
+          BoxShadow(
+            color: ColorConstant.bluegray90014,
+            spreadRadius: getHorizontalSize(
+              2.00,
+            ),
+            blurRadius: getHorizontalSize(
+              2.00,
+            ),
+            offset: Offset(
+              0,
+              24,
+            ),
+          ),
+        ],
       );
   static BoxDecoration get textstylepoppinssemibold101 => BoxDecoration(
         borderRadius: BorderRadius.circular(

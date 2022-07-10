@@ -1,7 +1,7 @@
 import 'controller/login_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:jakub_kaczmarski_s_application4/core/app_export.dart';
+import 'package:plz_now_work/core/app_export.dart';
 
 class LoginScreen extends GetWidget<LoginController> {
   @override
@@ -236,7 +236,7 @@ class LoginScreen extends GetWidget<LoginController> {
   }
 
   onTapBtnSignin() {
-    Get.toNamed(AppRoutes.dashboardScreen);
+    Get.toNamed(AppRoutes.registrationScreen);
   }
 
   onTapTxtDonthaveana() {

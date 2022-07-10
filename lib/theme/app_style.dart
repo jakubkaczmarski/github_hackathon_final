@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jakub_kaczmarski_s_application4/core/app_export.dart';
+import 'package:plz_now_work/core/app_export.dart';
 
 class AppStyle {
   static TextStyle textstyleregular20 = TextStyle(
@@ -48,8 +48,10 @@ class AppStyle {
   );
 
   static TextStyle textstylepoppinsregular121 =
-      textstylepoppinsregular12.copyWith(
-    color: ColorConstant.gray600,
+      textstylepoppinsregular14.copyWith(
+    fontSize: getFontSize(
+      12,
+    ),
   );
 
   static TextStyle textstylepoppinssemibold16 =
@@ -60,13 +62,10 @@ class AppStyle {
   );
 
   static TextStyle textstylepoppinssemibold15 =
-      textstylepoppinssemibold103.copyWith(
-    color: ColorConstant.whiteA700,
+      textstylepoppinssemibold102.copyWith(
     fontSize: getFontSize(
       15,
     ),
-    fontFamily: 'Poppins',
-    fontWeight: FontWeight.w600,
   );
 
   static TextStyle textstylepoppinsregular141 =
@@ -93,7 +92,7 @@ class AppStyle {
   );
 
   static TextStyle textstylepoppinssemibold181 =
-      textstylepoppinssemibold184.copyWith();
+      textstylepoppinssemibold183.copyWith();
 
   static TextStyle textstylepoppinssemibold151 =
       textstylepoppinssemibold101.copyWith(
@@ -108,18 +107,25 @@ class AppStyle {
   );
 
   static TextStyle textstylepoppinssemibold103 =
-      textstylepoppinssemibold102.copyWith();
+      textstylepoppinssemibold101.copyWith(
+    color: ColorConstant.redA100,
+  );
 
   static TextStyle textstylepoppinssemibold102 =
-      textstylepoppinssemibold184.copyWith(
+      textstylepoppinssemibold181.copyWith(
+    color: ColorConstant.whiteA700,
     fontSize: getFontSize(
       10,
     ),
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w600,
   );
 
-  static TextStyle textstylepoppinssemibold10 =
-      textstylepoppinssemibold102.copyWith(
+  static TextStyle textstylepoppinssemibold10 = TextStyle(
     color: ColorConstant.lightGreen500,
+    fontSize: getFontSize(
+      10,
+    ),
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w600,
   );
@@ -131,6 +137,10 @@ class AppStyle {
     ),
     fontFamily: 'IBM Plex Sans',
     fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle textstylepoppinsbold12 = textstylepoppinsregular12.copyWith(
+    fontWeight: FontWeight.w700,
   );
 
   static TextStyle textstyleregular16 = TextStyle(
@@ -166,7 +176,7 @@ class AppStyle {
 
   static TextStyle textstylepoppinssemibold184 =
       textstylepoppinssemibold182.copyWith(
-    color: ColorConstant.whiteA700,
+    color: ColorConstant.black900,
   );
 
   static TextStyle textstyleibmplexsansbold24 = TextStyle(
@@ -180,7 +190,7 @@ class AppStyle {
 
   static TextStyle textstylepoppinssemibold183 =
       textstylepoppinssemibold182.copyWith(
-    color: ColorConstant.black900,
+    color: ColorConstant.whiteA700,
   );
 
   static TextStyle textstylepoppinssemibold182 = TextStyle(
@@ -211,11 +221,7 @@ class AppStyle {
   );
 
   static TextStyle textstylepoppinssemibold101 =
-      textstylepoppinssemibold10.copyWith(
-    fontSize: getFontSize(
-      10,
-    ),
-  );
+      textstylepoppinssemibold10.copyWith();
 
   static TextStyle textstylepoppinsregular13 = TextStyle(
     color: ColorConstant.black900Bc,
@@ -226,11 +232,13 @@ class AppStyle {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle textstylepoppinsregular12 =
-      textstylepoppinsregular14.copyWith(
+  static TextStyle textstylepoppinsregular12 = TextStyle(
+    color: ColorConstant.gray600,
     fontSize: getFontSize(
       12,
     ),
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w400,
   );
 
   static TextStyle textstylepoppinsregular14 = TextStyle(

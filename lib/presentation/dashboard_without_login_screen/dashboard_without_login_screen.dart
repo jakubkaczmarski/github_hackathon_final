@@ -1,7 +1,7 @@
 import 'controller/dashboard_without_login_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:jakub_kaczmarski_s_application4/core/app_export.dart';
+import 'package:plz_now_work/core/app_export.dart';
 
 class DashboardWithoutLoginScreen
     extends GetWidget<DashboardWithoutLoginController> {
@@ -26,7 +26,7 @@ class DashboardWithoutLoginScreen
                                       width: size.width,
                                       margin: EdgeInsets.only(
                                           left: getHorizontalSize(2.00),
-                                          top: getVerticalSize(0.00)),
+                                          top: getVerticalSize(4.00)),
                                       decoration: BoxDecoration(
                                           color: ColorConstant.lightGreen500Cc),
                                       child: Padding(
@@ -61,7 +61,7 @@ class DashboardWithoutLoginScreen
                                                                     13.00),
                                                             child: SvgPicture.asset(
                                                                 ImageConstant
-                                                                    .imgVector4,
+                                                                    .imgVector3,
                                                                 fit: BoxFit
                                                                     .fill)))),
                                                 Padding(
@@ -75,7 +75,7 @@ class DashboardWithoutLoginScreen
                                                         textAlign:
                                                             TextAlign.left,
                                                         style: AppStyle
-                                                            .textstylepoppinssemibold184
+                                                            .textstylepoppinssemibold183
                                                             .copyWith(
                                                                 fontSize:
                                                                     getFontSize(
@@ -149,7 +149,7 @@ class DashboardWithoutLoginScreen
                                                                               top: getVerticalSize(19.00),
                                                                               right: getHorizontalSize(16.00),
                                                                               bottom: getVerticalSize(19.00)),
-                                                                          child: Container(height: getVerticalSize(12.00), width: getHorizontalSize(6.00), child: SvgPicture.asset(ImageConstant.imgVector5, fit: BoxFit.fill))))
+                                                                          child: Container(height: getVerticalSize(12.00), width: getHorizontalSize(6.00), child: SvgPicture.asset(ImageConstant.imgVector4, fit: BoxFit.fill))))
                                                                 ]))))),
                                             Align(
                                                 alignment: Alignment.centerLeft,

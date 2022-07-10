@@ -1,6 +1,6 @@
 import 'controller/app_navigation_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:jakub_kaczmarski_s_application4/core/app_export.dart';
+import 'package:plz_now_work/core/app_export.dart';
 
 class AppNavigationScreen extends GetWidget<AppNavigationController> {
   @override
@@ -291,61 +291,6 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                         ]))),
                                             GestureDetector(
                                                 onTap: () {
-                                                  onTapMaps();
-                                                },
-                                                child: Container(
-                                                    width: size.width,
-                                                    decoration: BoxDecoration(
-                                                        color: ColorConstant
-                                                            .whiteA700),
-                                                    child: Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.min,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .start,
-                                                        children: [
-                                                          Align(
-                                                              alignment: Alignment
-                                                                  .centerLeft,
-                                                              child: Padding(
-                                                                  padding: EdgeInsets.only(
-                                                                      left: getHorizontalSize(
-                                                                          20.00),
-                                                                      top: getVerticalSize(
-                                                                          10.00),
-                                                                      right: getHorizontalSize(
-                                                                          20.00),
-                                                                      bottom: getVerticalSize(
-                                                                          10.00)),
-                                                                  child: Text(
-                                                                      "lbl_maps"
-                                                                          .tr,
-                                                                      overflow:
-                                                                          TextOverflow
-                                                                              .ellipsis,
-                                                                      textAlign:
-                                                                          TextAlign
-                                                                              .center,
-                                                                      style: AppStyle
-                                                                          .textstyleregular20
-                                                                          .copyWith(fontSize: getFontSize(20))))),
-                                                          Container(
-                                                              height:
-                                                                  getVerticalSize(
-                                                                      1.00),
-                                                              width: size.width,
-                                                              margin: EdgeInsets
-                                                                  .only(
-                                                                      top: getVerticalSize(
-                                                                          5.00)),
-                                                              decoration:
-                                                                  BoxDecoration(
-                                                                      color: ColorConstant
-                                                                          .bluegray400))
-                                                        ]))),
-                                            GestureDetector(
-                                                onTap: () {
                                                   onTapDashboardwithoutlogin();
                                                 },
                                                 child: Container(
@@ -485,6 +430,61 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                           10.00)),
                                                                   child: Text(
                                                                       "msg_qr_code_scan_pa"
+                                                                          .tr,
+                                                                      overflow:
+                                                                          TextOverflow
+                                                                              .ellipsis,
+                                                                      textAlign:
+                                                                          TextAlign
+                                                                              .center,
+                                                                      style: AppStyle
+                                                                          .textstyleregular20
+                                                                          .copyWith(fontSize: getFontSize(20))))),
+                                                          Container(
+                                                              height:
+                                                                  getVerticalSize(
+                                                                      1.00),
+                                                              width: size.width,
+                                                              margin: EdgeInsets
+                                                                  .only(
+                                                                      top: getVerticalSize(
+                                                                          5.00)),
+                                                              decoration:
+                                                                  BoxDecoration(
+                                                                      color: ColorConstant
+                                                                          .bluegray400))
+                                                        ]))),
+                                            GestureDetector(
+                                                onTap: () {
+                                                  onTapMaps();
+                                                },
+                                                child: Container(
+                                                    width: size.width,
+                                                    decoration: BoxDecoration(
+                                                        color: ColorConstant
+                                                            .whiteA700),
+                                                    child: Column(
+                                                        mainAxisSize:
+                                                            MainAxisSize.min,
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          Align(
+                                                              alignment: Alignment
+                                                                  .centerLeft,
+                                                              child: Padding(
+                                                                  padding: EdgeInsets.only(
+                                                                      left: getHorizontalSize(
+                                                                          20.00),
+                                                                      top: getVerticalSize(
+                                                                          10.00),
+                                                                      right: getHorizontalSize(
+                                                                          20.00),
+                                                                      bottom: getVerticalSize(
+                                                                          10.00)),
+                                                                  child: Text(
+                                                                      "lbl_maps"
                                                                           .tr,
                                                                       overflow:
                                                                           TextOverflow
@@ -749,10 +749,6 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
     Get.toNamed(AppRoutes.searchPageScreen);
   }
 
-  onTapMaps() {
-    Get.toNamed(AppRoutes.mapsScreen);
-  }
-
   onTapDashboardwithoutlogin() {
     Get.toNamed(AppRoutes.dashboardWithoutLoginScreen);
   }
@@ -763,6 +759,10 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
 
   onTapQrcodescanpage() {
     Get.toNamed(AppRoutes.qrCodeScanPageScreen);
+  }
+
+  onTapMaps() {
+    Get.toNamed(AppRoutes.mapsScreen);
   }
 
   onTapRegistration() {

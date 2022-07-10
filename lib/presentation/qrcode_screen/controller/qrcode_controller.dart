@@ -1,5 +1,5 @@
 import '/core/app_export.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/qrcode_screen/models/qrcode_model.dart';
+import 'package:plz_now_work/presentation/qrcode_screen/models/qrcode_model.dart';
 
 class QrcodeController extends GetxController {
   Rx<QrcodeModel> qrcodeModelObj = QrcodeModel().obs;

@@ -1,5 +1,5 @@
 import '/core/app_export.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/maps_screen/models/maps_model.dart';
+import 'package:plz_now_work/presentation/maps_screen/models/maps_model.dart';
 
 class MapsController extends GetxController {
   Rx<MapsModel> mapsModelObj = MapsModel().obs;

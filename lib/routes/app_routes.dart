@@ -1,29 +1,29 @@
-import 'package:jakub_kaczmarski_s_application4/presentation/cards_screen/cards_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/cards_screen/binding/cards_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/splash_screen/splash_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/splash_screen/binding/splash_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/qrcode_screen/qrcode_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/qrcode_screen/binding/qrcode_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/search_page_screen/search_page_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/search_page_screen/binding/search_page_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/maps_screen/maps_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/maps_screen/binding/maps_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/dashboard_without_login_screen/dashboard_without_login_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/dashboard_without_login_screen/binding/dashboard_without_login_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/map_screen/map_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/map_screen/binding/map_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/qr_code_scan_page_screen/qr_code_scan_page_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/qr_code_scan_page_screen/binding/qr_code_scan_page_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/registration_screen/registration_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/registration_screen/binding/registration_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/dashboard_screen/dashboard_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/dashboard_screen/binding/dashboard_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/login_screen/login_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/login_screen/binding/login_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/week_overview_screen/week_overview_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/week_overview_screen/binding/week_overview_binding.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/app_navigation_screen/app_navigation_screen.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
+import 'package:plz_now_work/presentation/cards_screen/cards_screen.dart';
+import 'package:plz_now_work/presentation/cards_screen/binding/cards_binding.dart';
+import 'package:plz_now_work/presentation/splash_screen/splash_screen.dart';
+import 'package:plz_now_work/presentation/splash_screen/binding/splash_binding.dart';
+import 'package:plz_now_work/presentation/qrcode_screen/qrcode_screen.dart';
+import 'package:plz_now_work/presentation/qrcode_screen/binding/qrcode_binding.dart';
+import 'package:plz_now_work/presentation/search_page_screen/search_page_screen.dart';
+import 'package:plz_now_work/presentation/search_page_screen/binding/search_page_binding.dart';
+import 'package:plz_now_work/presentation/dashboard_without_login_screen/dashboard_without_login_screen.dart';
+import 'package:plz_now_work/presentation/dashboard_without_login_screen/binding/dashboard_without_login_binding.dart';
+import 'package:plz_now_work/presentation/map_screen/map_screen.dart';
+import 'package:plz_now_work/presentation/map_screen/binding/map_binding.dart';
+import 'package:plz_now_work/presentation/qr_code_scan_page_screen/qr_code_scan_page_screen.dart';
+import 'package:plz_now_work/presentation/qr_code_scan_page_screen/binding/qr_code_scan_page_binding.dart';
+import 'package:plz_now_work/presentation/maps_screen/maps_screen.dart';
+import 'package:plz_now_work/presentation/maps_screen/binding/maps_binding.dart';
+import 'package:plz_now_work/presentation/registration_screen/registration_screen.dart';
+import 'package:plz_now_work/presentation/registration_screen/binding/registration_binding.dart';
+import 'package:plz_now_work/presentation/dashboard_screen/dashboard_screen.dart';
+import 'package:plz_now_work/presentation/dashboard_screen/binding/dashboard_binding.dart';
+import 'package:plz_now_work/presentation/login_screen/login_screen.dart';
+import 'package:plz_now_work/presentation/login_screen/binding/login_binding.dart';
+import 'package:plz_now_work/presentation/week_overview_screen/week_overview_screen.dart';
+import 'package:plz_now_work/presentation/week_overview_screen/binding/week_overview_binding.dart';
+import 'package:plz_now_work/presentation/app_navigation_screen/app_navigation_screen.dart';
+import 'package:plz_now_work/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
 import 'package:get/get.dart';
 
 class AppRoutes {
@@ -35,13 +35,13 @@ class AppRoutes {
 
   static String searchPageScreen = '/search_page_screen';
 
-  static String mapsScreen = '/maps_screen';
-
   static String dashboardWithoutLoginScreen = '/dashboard_without_login_screen';
 
   static String mapScreen = '/map_screen';
 
   static String qrCodeScanPageScreen = '/qr_code_scan_page_screen';
+
+  static String mapsScreen = '/maps_screen';
 
   static String registrationScreen = '/registration_screen';
 
@@ -85,13 +85,6 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: mapsScreen,
-      page: () => MapsScreen(),
-      bindings: [
-        MapsBinding(),
-      ],
-    ),
-    GetPage(
       name: dashboardWithoutLoginScreen,
       page: () => DashboardWithoutLoginScreen(),
       bindings: [
@@ -110,6 +103,13 @@ class AppRoutes {
       page: () => QrCodeScanPageScreen(),
       bindings: [
         QrCodeScanPageBinding(),
+      ],
+    ),
+    GetPage(
+      name: mapsScreen,
+      page: () => MapsScreen(),
+      bindings: [
+        MapsBinding(),
       ],
     ),
     GetPage(

@@ -1,7 +1,7 @@
 import 'controller/week_overview_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:jakub_kaczmarski_s_application4/core/app_export.dart';
+import 'package:plz_now_work/core/app_export.dart';
 
 class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
   @override
@@ -25,7 +25,7 @@ class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
                                   child: Container(
                                       width: size.width,
                                       margin: EdgeInsets.only(
-                                          top: getVerticalSize(0.00)),
+                                          top: getVerticalSize(4.00)),
                                       decoration: BoxDecoration(
                                           color: ColorConstant.lightGreen500Cc),
                                       child: Padding(
@@ -59,15 +59,15 @@ class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
                                                                     13.00),
                                                             child: SvgPicture.asset(
                                                                 ImageConstant
-                                                                    .imgVector19,
+                                                                    .imgVector16,
                                                                 fit: BoxFit
                                                                     .fill)))),
                                                 Padding(
                                                     padding: EdgeInsets.only(
                                                         left: getHorizontalSize(
                                                             52.00),
-                                                        bottom:
-                                                            getVerticalSize(0)),
+                                                        bottom: getVerticalSize(
+                                                            7.31)),
                                                     child: Text(
                                                         "msg_review_of_my_we"
                                                             .tr,
@@ -76,7 +76,7 @@ class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
                                                         textAlign:
                                                             TextAlign.left,
                                                         style: AppStyle
-                                                            .textstylepoppinssemibold184
+                                                            .textstylepoppinssemibold183
                                                             .copyWith(
                                                                 fontSize:
                                                                     getFontSize(
@@ -96,7 +96,7 @@ class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
                               Align(
                                   alignment: Alignment.centerRight,
                                   child: Container(
-                                      height: getVerticalSize(400.00),
+                                      height: getVerticalSize(319.00),
                                       width: getHorizontalSize(358.00),
                                       margin: EdgeInsets.only(
                                           left: getHorizontalSize(10.00),
@@ -108,7 +108,7 @@ class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
                                                 alignment: Alignment.centerLeft,
                                                 child: Container(
                                                     height:
-                                                        getVerticalSize(400.00),
+                                                        getVerticalSize(319.00),
                                                     width: getHorizontalSize(
                                                         341.00),
                                                     margin: EdgeInsets.only(
@@ -366,18 +366,18 @@ class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
                                       children: [
                                         Padding(
                                             padding: EdgeInsets.only(
-                                                left: getHorizontalSize(17.00),
+                                                left: getHorizontalSize(12.00),
                                                 top: getVerticalSize(10.00),
                                                 bottom: getVerticalSize(9.00)),
                                             child: Container(
                                                 height: getSize(28.00),
                                                 width: getSize(28.00),
                                                 child: SvgPicture.asset(
-                                                    ImageConstant.imgGroup10,
+                                                    ImageConstant.imgGroup8,
                                                     fit: BoxFit.fill))),
                                         Padding(
                                             padding: EdgeInsets.only(
-                                                left: getHorizontalSize(9.00),
+                                                left: getHorizontalSize(14.00),
                                                 top: getVerticalSize(10.00),
                                                 right: getHorizontalSize(4.00),
                                                 bottom: getVerticalSize(25.00)),
@@ -414,23 +414,22 @@ class WeekOverviewScreen extends GetWidget<WeekOverviewController> {
                                       mainAxisAlignment:
                                           MainAxisAlignment.start,
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.center,
+                                          CrossAxisAlignment.start,
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Padding(
                                             padding: EdgeInsets.only(
-                                                left: getHorizontalSize(17.00),
-                                                top: getVerticalSize(10.00),
-                                                bottom: getVerticalSize(9.00)),
-                                            child: Container(
-                                                height: getSize(28.00),
-                                                width: getSize(28.00),
-                                                child: SvgPicture.asset(
-                                                    ImageConstant.imgGroup12,
-                                                    fit: BoxFit.fill))),
+                                                left: getHorizontalSize(9.00),
+                                                top: getVerticalSize(4.00),
+                                                bottom: getVerticalSize(8.00)),
+                                            child: Image.asset(
+                                                ImageConstant.imgCompetition1,
+                                                height: getSize(35.00),
+                                                width: getSize(35.00),
+                                                fit: BoxFit.fill)),
                                         Padding(
                                             padding: EdgeInsets.only(
-                                                left: getHorizontalSize(9.00),
+                                                left: getHorizontalSize(10.00),
                                                 top: getVerticalSize(10.00),
                                                 right: getHorizontalSize(4.00),
                                                 bottom: getVerticalSize(25.00)),

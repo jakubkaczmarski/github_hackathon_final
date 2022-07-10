@@ -1,9 +1,9 @@
-name: jakub_kaczmarski_s_application4
+name: plz_now_work
 description: A new Flutter project.
 version: 1.0.0+1
 environment: 
   sdk: '>=2.12.0 <3.0.0'
-dependencies:
+dependencies: 
   flutter: 
     sdk: flutter
   get: ^4.6.1
@@ -15,11 +15,6 @@ dependencies:
   flutter_svg: ^0.22.0
   permission_handler: 8.1.6
   images_picker: ^1.2.10
-  flutter_launcher_icons: ^0.9.3
-flutter_icons:
-  android: "launcher_icon"
-  ios: true
-  image_path: "assets/app_icon.png"
 dev_dependencies: 
   flutter_test: 
     sdk: flutter
@@ -45,5 +40,7 @@ flutter:
       fonts: 
         - asset: assets/fonts/poppinssemibold600.ttf
           weight: 600
+        - asset: assets/fonts/poppinsbold700.ttf
+          weight: 700
         - asset: assets/fonts/poppinsregular400.ttf
           weight: 400

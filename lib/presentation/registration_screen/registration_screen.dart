@@ -1,7 +1,7 @@
 import 'controller/registration_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:jakub_kaczmarski_s_application4/core/app_export.dart';
+import 'package:plz_now_work/core/app_export.dart';
 
 class RegistrationScreen extends GetWidget<RegistrationController> {
   @override
@@ -32,7 +32,7 @@ class RegistrationScreen extends GetWidget<RegistrationController> {
                                           height: getVerticalSize(23.00),
                                           width: getHorizontalSize(13.00),
                                           child: SvgPicture.asset(
-                                              ImageConstant.imgVector15,
+                                              ImageConstant.imgVector12,
                                               fit: BoxFit.fill)))),
                               Align(
                                   alignment: Alignment.center,

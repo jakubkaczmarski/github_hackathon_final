@@ -1,7 +1,7 @@
 import '../controller/maps_controller.dart';
 import '../models/maps_item_model.dart';
 import 'package:flutter/material.dart';
-import 'package:jakub_kaczmarski_s_application4/core/app_export.dart';
+import 'package:plz_now_work/core/app_export.dart';
 
 // ignore: must_be_immutable
 class MapsItemWidget extends StatelessWidget {
@@ -64,7 +64,7 @@ class MapsItemWidget extends StatelessWidget {
                         "lbl_action".tr,
                         overflow: TextOverflow.ellipsis,
                         textAlign: TextAlign.left,
-                        style: AppStyle.textstylepoppinssemibold183.copyWith(
+                        style: AppStyle.textstylepoppinssemibold184.copyWith(
                           fontSize: getFontSize(
                             18,
                           ),
@@ -266,7 +266,7 @@ class MapsItemWidget extends StatelessWidget {
                       "msg_porschestra_e_1".tr,
                       overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.left,
-                      style: AppStyle.textstylepoppinsregular12.copyWith(
+                      style: AppStyle.textstylepoppinsregular121.copyWith(
                         fontSize: getFontSize(
                           12,
                         ),
@@ -284,7 +284,7 @@ class MapsItemWidget extends StatelessWidget {
                       "lbl_021130146100".tr,
                       overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.left,
-                      style: AppStyle.textstylepoppinsregular12.copyWith(
+                      style: AppStyle.textstylepoppinsregular121.copyWith(
                         fontSize: getFontSize(
                           12,
                         ),
@@ -371,7 +371,7 @@ class MapsItemWidget extends StatelessWidget {
                                 "lbl_action".tr,
                                 overflow: TextOverflow.ellipsis,
                                 textAlign: TextAlign.left,
-                                style: AppStyle.textstylepoppinssemibold183
+                                style: AppStyle.textstylepoppinssemibold184
                                     .copyWith(
                                   fontSize: getFontSize(
                                     18,
@@ -380,38 +380,32 @@ class MapsItemWidget extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Container(
-                              margin: EdgeInsets.only(
+                            Padding(
+                              padding: EdgeInsets.only(
                                 right: getHorizontalSize(
                                   29.00,
                                 ),
                               ),
-                              padding: EdgeInsets.only(
-                                left: getHorizontalSize(
-                                  2.94,
+                              child: Container(
+                                alignment: Alignment.center,
+                                height: getVerticalSize(
+                                  21.00,
                                 ),
-                                top: getVerticalSize(
-                                  3.65,
+                                width: getHorizontalSize(
+                                  51.00,
                                 ),
-                                right: getHorizontalSize(
-                                  3.06,
-                                ),
-                                bottom: getVerticalSize(
-                                  3.66,
-                                ),
-                              ),
-                              decoration:
-                                  AppDecoration.textstylepoppinssemibold101,
-                              child: Text(
-                                "lbl_150p".tr,
-                                overflow: TextOverflow.ellipsis,
-                                textAlign: TextAlign.center,
-                                style: AppStyle.textstylepoppinssemibold101
-                                    .copyWith(
-                                  fontSize: getFontSize(
-                                    10,
+                                decoration:
+                                    AppDecoration.textstylepoppinssemibold101,
+                                child: Text(
+                                  "lbl_6_15".tr,
+                                  textAlign: TextAlign.center,
+                                  style: AppStyle.textstylepoppinssemibold101
+                                      .copyWith(
+                                    fontSize: getFontSize(
+                                      10,
+                                    ),
+                                    letterSpacing: 0.60,
                                   ),
-                                  letterSpacing: 0.60,
                                 ),
                               ),
                             ),
@@ -437,7 +431,7 @@ class MapsItemWidget extends StatelessWidget {
                           "msg_porschestra_e_1".tr,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.left,
-                          style: AppStyle.textstylepoppinsregular12.copyWith(
+                          style: AppStyle.textstylepoppinsregular121.copyWith(
                             fontSize: getFontSize(
                               12,
                             ),
@@ -461,7 +455,7 @@ class MapsItemWidget extends StatelessWidget {
                           "lbl_021130146100".tr,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.left,
-                          style: AppStyle.textstylepoppinsregular12.copyWith(
+                          style: AppStyle.textstylepoppinsregular121.copyWith(
                             fontSize: getFontSize(
                               12,
                             ),

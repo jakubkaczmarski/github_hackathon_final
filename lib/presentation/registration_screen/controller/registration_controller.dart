@@ -1,5 +1,5 @@
 import '/core/app_export.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/registration_screen/models/registration_model.dart';
+import 'package:plz_now_work/presentation/registration_screen/models/registration_model.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationController extends GetxController {

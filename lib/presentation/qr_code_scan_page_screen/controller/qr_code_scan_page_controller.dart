@@ -1,5 +1,5 @@
 import '/core/app_export.dart';
-import 'package:jakub_kaczmarski_s_application4/presentation/qr_code_scan_page_screen/models/qr_code_scan_page_model.dart';
+import 'package:plz_now_work/presentation/qr_code_scan_page_screen/models/qr_code_scan_page_model.dart';
 
 class QrCodeScanPageController extends GetxController {
   Rx<QrCodeScanPageModel> qrCodeScanPageModelObj = QrCodeScanPageModel().obs;

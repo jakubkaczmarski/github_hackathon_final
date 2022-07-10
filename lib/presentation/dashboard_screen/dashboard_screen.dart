@@ -1,7 +1,7 @@
 import 'controller/dashboard_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:jakub_kaczmarski_s_application4/core/app_export.dart';
+import 'package:plz_now_work/core/app_export.dart';
 
 class DashboardScreen extends GetWidget<DashboardController> {
   @override
@@ -249,7 +249,7 @@ class DashboardScreen extends GetWidget<DashboardController> {
                                                                         Align(
                                                                             alignment:
                                                                                 Alignment.centerLeft,
-                                                                            child: Padding(padding: EdgeInsets.only(left: getHorizontalSize(16.00), top: getVerticalSize(19.00), right: getHorizontalSize(16.00), bottom: getVerticalSize(19.00)), child: Container(height: getVerticalSize(12.00), width: getHorizontalSize(6.00), child: SvgPicture.asset(ImageConstant.imgVector16, fit: BoxFit.fill))))
+                                                                            child: Padding(padding: EdgeInsets.only(left: getHorizontalSize(16.00), top: getVerticalSize(19.00), right: getHorizontalSize(16.00), bottom: getVerticalSize(19.00)), child: Container(height: getVerticalSize(12.00), width: getHorizontalSize(6.00), child: SvgPicture.asset(ImageConstant.imgVector13, fit: BoxFit.fill))))
                                                                       ]))))),
                                                   Align(
                                                       alignment:
@@ -324,7 +324,7 @@ class DashboardScreen extends GetWidget<DashboardController> {
                                                                         Align(
                                                                             alignment:
                                                                                 Alignment.centerLeft,
-                                                                            child: Padding(padding: EdgeInsets.only(left: getHorizontalSize(16.00), top: getVerticalSize(19.00), right: getHorizontalSize(16.00), bottom: getVerticalSize(19.00)), child: Container(height: getVerticalSize(12.00), width: getHorizontalSize(6.00), child: SvgPicture.asset(ImageConstant.imgVector17, fit: BoxFit.fill))))
+                                                                            child: Padding(padding: EdgeInsets.only(left: getHorizontalSize(16.00), top: getVerticalSize(19.00), right: getHorizontalSize(16.00), bottom: getVerticalSize(19.00)), child: Container(height: getVerticalSize(12.00), width: getHorizontalSize(6.00), child: SvgPicture.asset(ImageConstant.imgVector14, fit: BoxFit.fill))))
                                                                       ]))))),
                                                   Align(
                                                       alignment:
@@ -399,7 +399,7 @@ class DashboardScreen extends GetWidget<DashboardController> {
                                                                         Align(
                                                                             alignment:
                                                                                 Alignment.centerLeft,
-                                                                            child: Padding(padding: EdgeInsets.only(left: getHorizontalSize(16.00), top: getVerticalSize(19.00), right: getHorizontalSize(16.00), bottom: getVerticalSize(19.00)), child: Container(height: getVerticalSize(12.00), width: getHorizontalSize(6.00), child: SvgPicture.asset(ImageConstant.imgVector18, fit: BoxFit.fill))))
+                                                                            child: Padding(padding: EdgeInsets.only(left: getHorizontalSize(16.00), top: getVerticalSize(19.00), right: getHorizontalSize(16.00), bottom: getVerticalSize(19.00)), child: Container(height: getVerticalSize(12.00), width: getHorizontalSize(6.00), child: SvgPicture.asset(ImageConstant.imgVector15, fit: BoxFit.fill))))
                                                                       ]))))),
                                                   Align(
                                                       alignment:

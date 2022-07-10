@@ -1,5 +1,5 @@
 
-# jakub_kaczmarski_s_application4
+# plz_now_work
 
 <div>
   <h1 align="center">Getting Started with Flutter 🚀 </h1>
@@ -97,4 +97,3 @@ https://pub.dev/packages/cached_network_image
 ### Support
 
 If you have problems or questions go to our Discord channel, we will then try to help you as quickly as possible: https://discord.com/invite/rFMnCG5MZ7
-# github_hackathon_final
